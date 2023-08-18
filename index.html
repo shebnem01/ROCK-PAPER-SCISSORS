@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1 class="title">ROCK-PAPER-SCISSORS</h1>
+
+      <ol class="game-rules">
+        <li>Rock wins against scissors</li>
+        <li>Scissors wins against paper</li>
+        <li>Paper wins against rock</li>
+      </ol>
+
+      <div class="player" id="player">
+        <div>Choose:</div>
+        <ul class="options">
+          <li>
+            <img
+              class="option"
+              id="rock"
+              src="./assets/rock.png"
+              alt="rock-img"
+            />
+          </li>
+          <li>
+            <img
+              class="option"
+              id="paper"
+              src="./assets/paper.png"
+              alt="paper-img"
+            />
+          </li>
+          <li>
+            <img
+              class="option"
+              id="scissors"
+              src="./assets/scissors.png"
+              alt="scissors-img"
+            />
+          </li>
+        </ul>
+      </div>
+
+      <ul class="computer">
+        <ul class="options">
+          <li>
+            <img
+              class="option"
+              id="computer-option"
+              src="./assets/question.png"
+              alt="rock-img"
+            />
+          </li>
+        </ul>
+      </ul>
+      <div class="game-footer">
+        <div class="resul" id="result">Result</div>
+        <div class="round" id="round">Round:0</div>
+        <button class="restart-btn" id="restart">Restart</button>
+      </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
